@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Короткий зміст книги</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Roboto", Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #222;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 34px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .accordion-item {
+            border: 1px solid #d8d8d8;
+            border-radius: 14px;
+            background: #ffffff;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            width: 100%;
+            cursor: pointer;
+            padding: 18px 22px;
+            border: none;
+            background: #f0f0f0;
+            color: #222;
+            font-family: inherit;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header::after {
+            content: "+";
+            font-size: 26px;
+            line-height: 1;
+            font-weight: 500;
+        }
+
+        .accordion-item.active .accordion-header::after {
+            content: "−";
+        }
+
+        .accordion-panel {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.25s ease, opacity 0.2s ease;
+            background: #ffffff;
+        }
+
+        .accordion-item.active .accordion-panel {
+            opacity: 1;
+        }
+
+        .chapter-content {
+            padding: 20px 24px 24px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="page">
+        <h1>Короткий зміст книги для пристойної (майже) людини</h1>
+
+        ```
+        <section class="accordion">
+            <div class="accordion-item active">
+                <button class="accordion-header" type="button" aria-expanded="true">Розділ 1</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 2</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 3</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 4</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 5</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 6</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 7</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 8</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 9</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 10</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 11</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 12</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 13</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 14</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 15</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 16</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Розділ 17</button>
+                <div class="accordion-panel">
+                    <div class="chapter-content">
+                        <ul>
+                            <li>Теза 1</li>
+                            <li>Теза 2</li>
+                            <li>Теза 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        ```
+
+    </main>
+
+    <script>
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        function closeItem(item) {
+            const button = item.querySelector(".accordion-header");
+            const panel = item.querySelector(".accordion-panel");
+
+            item.classList.remove("active");
+            button.setAttribute("aria-expanded", "false");
+            panel.style.maxHeight = null;
+        }
+
+        function openItem(item) {
+            const button = item.querySelector(".accordion-header");
+            const panel = item.querySelector(".accordion-panel");
+
+            item.classList.add("active");
+            button.setAttribute("aria-expanded", "true");
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+
+        accordionItems.forEach((item) => {
+            const button = item.querySelector(".accordion-header");
+
+            button.addEventListener("click", () => {
+                const isActive = item.classList.contains("active");
+
+                accordionItems.forEach(closeItem);
+
+                if (!isActive) {
+                    openItem(item);
+                }
+            });
+        });
+
+        if (item.classList.contains("active")) {
+            openItem(item);
+        }
+    </script>
+© group 02
+</body>
+
+</html>
