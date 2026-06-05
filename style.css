@@ -1,0 +1,109 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.title-subtitle {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.accordion-item {
+    border: 1px solid #d8d8d8;
+    border-radius: 14px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    cursor: pointer;
+    padding: 18px 22px;
+    border: none;
+    background: #f0f0f0;
+    color: #222;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header::after {
+    content: "+";
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.accordion-item.active .accordion-header::after {
+    content: "−";
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.25s ease, opacity 0.2s ease;
+    background: #ffffff;
+}
+
+.accordion-item.active .accordion-panel {
+    opacity: 1;
+}
+
+.chapter-content {
+    padding: 20px 24px 24px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.page-footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
