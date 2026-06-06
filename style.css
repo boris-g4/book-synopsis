@@ -107,3 +107,19 @@ li:last-child {
     color: #777;
     text-align: center;
 }
+.quote-block {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.quote-block p {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.quote-block footer {
+    margin: 2px 0 0 0;
+    padding: 0;
+    text-align: right;
+    line-height: 1.2;
+}
