@@ -12,6 +12,8 @@ This project is a practice webpage created to learn basic HTML, CSS, Git and Git
 
 The page contains a structured synopsis of a book, divided into chapters and sections.
 
+Project Scrum Master: Vitalii Karaman
+
 ## Technologies Used
 
 - HTML
